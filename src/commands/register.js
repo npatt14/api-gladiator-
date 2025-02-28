@@ -65,8 +65,11 @@ export default function(program) {
                 console.log(chalk.white(`Endpoint: ${chalk.cyan(apiData.url)}`));
                 console.log(''); 
                 console.log(chalk.yellow('Next Steps:'));
-                console.log
+                console.log(chalk.white(` Run a test: ${chalk.cyan(`apigladiator test --api-id ${apiData.id} --type latency`)}`));  
+            } catch (error) {
+                spinner.fail('API registration failed');
+                console.error(chalk.red(`Error: ${error.message || 'Unknown error'}`));
+                process.exit(1);
             }
-        })
-
+        });
 }
