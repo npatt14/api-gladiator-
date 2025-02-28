@@ -1,3 +1,12 @@
+/* API Gladiator - CLI Entry Point
+ * 
+ * This is the main entry point for the api gladiator cli.
+ * -> sets up the command structure, handles command registration, and provides
+ * the primary user interface for the application.
+ * 
+ */
+
+
 import { program } from 'commander'; // obj from commander - assists in building CLIs
 import chalk from 'chalk';
 import figlet from 'figlet';
