@@ -7,7 +7,7 @@ import chalk from 'chalk';
 import { v4 as uuidv4 } from 'uuid';
 import axios from 'axios';
 import ora from 'ora';
-import apiService from '../services/api-sevice.js'length
+import apiService from '../services/api-sevice.js'
 
 export default function(program) {
     program
